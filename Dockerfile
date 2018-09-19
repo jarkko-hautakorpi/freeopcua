@@ -28,7 +28,8 @@ RUN apt-get clean && apt-get update && apt-get install -y \
  xutils \
  lintian \
  pbuilder \
- reprepro
+ reprepro \
+ libmbedtls-dev
 ADD / /tmp/freeopcua
 WORKDIR /tmp/freeopcua
 RUN ./build.sh
